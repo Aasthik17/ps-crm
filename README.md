@@ -3,8 +3,6 @@
 > **India Innovates 2026 · Smart Governance Track**  
 > A fully functional prototype of an AI-powered citizen grievance management system.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/ps-crm)
-
 ---
 
 ## 🎯 What This Is
@@ -143,4 +141,4 @@ MIT — Free to use, modify, and deploy.
 
 ---
 
-*Built for India Innovates 2026 · PS-CRM Team*
+*Built for India Innovates 2026 · Coderholics Team*

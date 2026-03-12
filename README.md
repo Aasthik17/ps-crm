@@ -1,4 +1,4 @@
-# PS-CRM — Smart Public Service CRM
+# PS-CRM - Smart Public Service CRM
 
 > **India Innovates 2026 · Smart Governance Track**  
 > A fully functional prototype of an AI-powered citizen grievance management system.
@@ -9,18 +9,18 @@
 
 PS-CRM is a centralized digital command centre for managing citizen complaints. It demonstrates:
 
-- **Citizen Portal** — File complaints in multiple languages via a guided multi-step form
-- **Live Tracking** — Track complaint status in real time with a timeline view and SLA progress bar
-- **Officer Dashboard** — Manage, assign, and update complaints with filters and inline editing
-- **Admin Analytics** — Visual dashboards with category breakdowns, resolution rates, urgency distribution, and AI-generated insights
+- **Citizen Portal** - File complaints in multiple languages via a guided multi-step form
+- **Live Tracking** - Track complaint status in real time with a timeline view and SLA progress bar
+- **Officer Dashboard** - Manage, assign, and update complaints with filters and inline editing
+- **Admin Analytics** - Visual dashboards with category breakdowns, resolution rates, urgency distribution, and AI-generated insights
 
-All data persists in `localStorage` — complaints filed in the Citizen Portal immediately appear in the Officer and Admin dashboards.
+All data persists in `localStorage` - complaints filed in the Citizen Portal immediately appear in the Officer and Admin dashboards.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 **[ps-crm.vercel.app](https://ps-crm-six.vercel.app)** _(replace with your deployed URL)_
+👉 **[ps-crm.vercel.app](https://ps-crm-six.vercel.app)**
 
 ---
 
@@ -81,7 +81,7 @@ vercel
 1. Push this repo to GitHub
 2. Go to [vercel.com](https://vercel.com) → New Project
 3. Import your GitHub repo
-4. Vercel auto-detects Vite — click Deploy
+4. Vercel auto-detects Vite - click Deploy
 5. Done in ~30 seconds ✓
 
 ---

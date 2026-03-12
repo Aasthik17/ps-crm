@@ -20,7 +20,7 @@ All data persists in `localStorage` — complaints filed in the Citizen Portal i
 
 ## 🚀 Live Demo
 
-👉 **[ps-crm.vercel.app](https://ps-crm.vercel.app)** _(replace with your deployed URL)_
+👉 **[ps-crm.vercel.app](https://ps-crm-six.vercel.app)** _(replace with your deployed URL)_
 
 ---
 

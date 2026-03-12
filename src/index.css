@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Official GoI colour palette */
+  --saffron:    #FF6B00;      /* primary accent — India flag saffron  */
+  --saffron2:   #FF9933;      /* lighter saffron for hover / highlights */
+  --ind-green:  #138808;      /* India flag green — success / resolved */
+  --ind-green2: #1BA80E;      /* lighter green */
+  --navy:       #1A237E;      /* deep official navy — headers, nav */
+  --navy2:      #283593;      /* slightly lighter navy */
+  --navy3:      #3949AB;      /* accent navy for highlights */
+  --blue-light: #E8EAF6;      /* very light indigo — section backgrounds */
+  --blue-mid:   #C5CAE9;      /* mid-blue for borders / dividers */
+  --body-bg:    #F5F6FA;      /* off-white page background */
+  --card-bg:    #FFFFFF;      /* pure white cards */
+  --white:      #FFFFFF;
+  --text:       #1A237E;      /* primary text — deep navy */
+  --text2:      #37474F;      /* secondary text — dark grey */
+  --muted:      #607D8B;      /* muted text */
+  --border:     #C5CAE9;      /* card / input borders */
+  --red:        #C62828;      /* error / critical */
+  --amber:      #F57C00;      /* warning / pending */
+  --yellow:     #FFC107;      /* attention (SLA, highlight) */
+  --card-head:  #F0F2FF;      /* light indigo card header */
+}
+
+body {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--body-bg);
+  color: var(--text2);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--blue-light); }
+::-webkit-scrollbar-thumb { background: var(--navy3); border-radius: 3px; }
+
+.page { min-height: 100vh; padding: 0; }
+
+/* ── Badges ──────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.badge-yellow  { background: rgba(255,193,7,0.15);   color: #E65100; border: 1px solid rgba(255,193,7,0.4); }
+.badge-green   { background: rgba(19,136,8,0.12);    color: var(--ind-green); border: 1px solid rgba(19,136,8,0.3); }
+.badge-teal    { background: rgba(26,35,126,0.1);    color: var(--navy2); border: 1px solid rgba(26,35,126,0.25); }
+.badge-orange  { background: rgba(255,107,0,0.12);   color: var(--saffron); border: 1px solid rgba(255,107,0,0.3); }
+.badge-muted   { background: rgba(96,125,139,0.12);  color: var(--muted); border: 1px solid rgba(96,125,139,0.3); }
+.badge-red     { background: rgba(198,40,40,0.1);    color: var(--red); border: 1px solid rgba(198,40,40,0.3); }
+
+/* ── Cards ───────────────────────────────────────────────────── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.07);
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.btn-primary {
+  background: var(--saffron);
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+}
+.btn-primary:hover { background: var(--saffron2); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(255,107,0,0.3); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--navy);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1.5px solid var(--navy);
+  transition: all 0.2s;
+}
+.btn-secondary:hover { background: var(--blue-light); border-color: var(--navy2); }
+
+.btn-yellow {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.btn-yellow:hover { background: var(--navy2); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(26,35,126,0.3); }
+
+/* ── Form elements ───────────────────────────────────────────── */
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 13px; font-weight: 600; color: var(--text); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: var(--text2);
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(26,35,126,0.1);
+}
+.form-group select option { background: #fff; color: var(--text2); }
+
+/* ── Stat cards ──────────────────────────────────────────────── */
+.stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.06);
+}
+.stat-card .stat-value { font-size: 28px; font-weight: 800; }
+.stat-card .stat-label { font-size: 12px; color: var(--muted); font-weight: 500; }
+
+/* ── Animations ──────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in { animation: fadeIn 0.3s ease forwards; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.pulse { animation: pulse 2s infinite; }
+
+/* ── GoI top strip ───────────────────────────────────────────── */
+.goi-topstrip {
+  background: var(--navy);
+  color: rgba(255,255,255,0.85);
+  font-size: 11.5px;
+  padding: 5px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  letter-spacing: 0.2px;
+}
+.goi-topstrip .emblem { font-size: 18px; }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}

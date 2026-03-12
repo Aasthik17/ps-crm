@@ -78,7 +78,7 @@ export default function AdminDashboard() {
   const resRate = total ? Math.round((resolved / total) * 100) : 0;
   const avgRating = (() => {
     const rated = complaints.filter(c => c.rating);
-    return rated.length ? (rated.reduce((s, c) => s + c.rating, 0) / rated.length).toFixed(1) : '—';
+    return rated.length ? (rated.reduce((s, c) => s + c.rating, 0) / rated.length).toFixed(1) : '-';
   })();
 
   // Category breakdown
@@ -126,7 +126,7 @@ export default function AdminDashboard() {
           {[
             { label: 'Total Complaints', value: total,     color: '#1A237E' },
             { label: 'Resolution Rate',  value: `${resRate}%`, color: '#138808' },
-            { label: 'Avg. CSAT',        value: avgRating === '—' ? '—' : `${avgRating}/5`, color: '#FF6B00' },
+            { label: 'Avg. CSAT',        value: avgRating === '-' ? '-' : `${avgRating}/5`, color: '#FF6B00' },
             { label: 'Critical Open',    value: critical,  color: '#f87171' },
             { label: 'SLA Breached',     value: overdue,   color: overdue > 0 ? '#C62828' : '#138808' },
             { label: 'Pending',          value: pending,   color: '#E65100' },
@@ -138,7 +138,7 @@ export default function AdminDashboard() {
           ))}
         </div>
 
-        {/* Row 1 — Category + Status donut */}
+        {/* Row 1 - Category + Status donut */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
           <div className="card">
             <h3 style={{ fontWeight: 700, color: '#1A237E', marginBottom: 20 }}>Complaints by Category</h3>
@@ -159,7 +159,7 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        {/* Row 2 — Department + Urgency */}
+        {/* Row 2 - Department + Urgency */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
           <div className="card">
             <h3 style={{ fontWeight: 700, color: '#1A237E', marginBottom: 20 }}>Complaints by Department</h3>
@@ -178,7 +178,7 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        {/* Row 3 — Language + Recent */}
+        {/* Row 3 - Language + Recent */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 20, marginBottom: 20 }}>
           <div className="card">
             <h3 style={{ fontWeight: 700, color: '#1A237E', marginBottom: 20 }}>Language Distribution</h3>
@@ -216,10 +216,10 @@ export default function AdminDashboard() {
           <h3 style={{ fontWeight: 700, color: '#1A237E', marginBottom: 16 }}>🧠 AI-Generated Insights</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px,1fr))', gap: 16 }}>
             {[
-              { icon: '📈', title: 'Peak Category', text: `${catData[0]?.label || '—'} has the highest complaint volume (${catData[0]?.value || 0}). Consider proactive maintenance.` },
+              { icon: '📈', title: 'Peak Category', text: `${catData[0]?.label || '-'} has the highest complaint volume (${catData[0]?.value || 0}). Consider proactive maintenance.` },
               { icon: '⚡', title: 'SLA Alert', text: overdue > 0 ? `${overdue} complaint(s) have breached SLA. Immediate escalation required.` : 'All complaints are within SLA. Keep it up!' },
-              { icon: '🌐', title: 'Language Reach', text: `${langData.length} languages detected. Most complaints are in ${langData[0]?.label || '—'}.` },
-              { icon: '⭐', title: 'Satisfaction', text: avgRating === '—' ? 'No ratings yet. Encourage citizens to rate resolved complaints.' : `Current CSAT score: ${avgRating}/5. Target: 4.5+` },
+              { icon: '🌐', title: 'Language Reach', text: `${langData.length} languages detected. Most complaints are in ${langData[0]?.label || '-'}.` },
+              { icon: '⭐', title: 'Satisfaction', text: avgRating === '-' ? 'No ratings yet. Encourage citizens to rate resolved complaints.' : `Current CSAT score: ${avgRating}/5. Target: 4.5+` },
             ].map(i => (
               <div key={i.title} style={{ background: 'rgba(26,35,126,0.05)', border: '1px solid #C5CAE9', borderRadius: 8, padding: 14 }}>
                 <div style={{ fontSize: 20, marginBottom: 8 }}>{i.icon}</div>

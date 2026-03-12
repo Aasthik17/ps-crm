@@ -152,7 +152,7 @@ export default function FileComplaint() {
         <StepIndicator current={step} />
 
         <div className="card animate-in" key={step}>
-          {/* STEP 0 — Personal Details */}
+          {/* STEP 0 - Personal Details */}
           {step === 0 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               <h2 style={{ fontWeight: 700, marginBottom: 4 }}>Your Details</h2>
@@ -191,7 +191,7 @@ export default function FileComplaint() {
             </div>
           )}
 
-          {/* STEP 1 — Complaint Info */}
+          {/* STEP 1 - Complaint Info */}
           {step === 1 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               <h2 style={{ fontWeight: 700, marginBottom: 4 }}>Complaint Details</h2>
@@ -242,7 +242,7 @@ export default function FileComplaint() {
             </div>
           )}
 
-          {/* STEP 2 — Review */}
+          {/* STEP 2 - Review */}
           {step === 2 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <h2 style={{ fontWeight: 700, marginBottom: 4 }}>Review Your Complaint</h2>
@@ -256,7 +256,7 @@ export default function FileComplaint() {
                 ]},
                 { section: 'Complaint Info', items: [
                   ['Category', form.category], ['Urgency', form.urgency],
-                  ['Routed To', DEPT_MAP[form.category] || '—'], ['Description', form.description],
+                  ['Routed To', DEPT_MAP[form.category] || '-'], ['Description', form.description],
                 ]},
               ].map(sec => (
                 <div key={sec.section} className="card" style={{ padding: 16, background: '#F0F2FF' }}>

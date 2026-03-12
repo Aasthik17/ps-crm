@@ -129,7 +129,7 @@ export function loadComplaints() {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) return JSON.parse(raw);
   } catch {}
-  // First load — seed
+  // First load - seed
   localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_COMPLAINTS));
   return SEED_COMPLAINTS;
 }

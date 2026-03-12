@@ -20,7 +20,7 @@ All data persists in `localStorage` - complaints filed in the Citizen Portal imm
 
 ## 🚀 Live Demo
 
-👉 **[ps-crm.vercel.app](https://ps-crm-six.vercel.app)**
+👉 **[ps-crm-six.vercel.app](https://ps-crm-six.vercel.app)**
 
 ---
 
@@ -67,17 +67,17 @@ npm run dev
 
 ## 🌐 Deploy to Vercel
 
-### Option A — One Click
+### Option A - One Click
 Click the **Deploy with Vercel** button above.
 
-### Option B — CLI
+### Option B - CLI
 ```bash
 npm install -g vercel
 vercel
-# Follow prompts — it auto-detects Vite
+# Follow prompts - it auto-detects Vite
 ```
 
-### Option C — GitHub Integration
+### Option C - GitHub Integration
 1. Push this repo to GitHub
 2. Go to [vercel.com](https://vercel.com) → New Project
 3. Import your GitHub repo
@@ -131,13 +131,13 @@ ps-crm/
 | **Quality** | Clean component architecture, form validation, responsive layout |
 | **Feasibility** | No backend needed for prototype; production-ready stack (React + Vite) |
 | **Innovation** | AI triage simulation, multilingual intake, predictive SLA display |
-| **Impact** | End-to-end citizen journey demonstrated — from filing to rating |
+| **Impact** | End-to-end citizen journey demonstrated - from filing to rating |
 
 ---
 
 ## 📄 License
 
-MIT — Free to use, modify, and deploy.
+MIT - Free to use, modify, and deploy.
 
 ---
 

@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { loadComplaints } from '../data.js';
 
 const features = [
-  { icon: '📥', title: 'Omni-Channel Intake', desc: 'File complaints via web, WhatsApp, SMS, mobile app or in person — all in one place.' },
-  { icon: '🧠', title: 'AI-Powered Triage', desc: 'Automatic categorisation and urgency scoring in 22 Indian languages — in under 2 seconds.' },
+  { icon: '📥', title: 'Omni-Channel Intake', desc: 'File complaints via web, WhatsApp, SMS, mobile app or in person - all in one place.' },
+  { icon: '🧠', title: 'AI-Powered Triage', desc: 'Automatic categorisation and urgency scoring in 22 Indian languages - in under 2 seconds.' },
   { icon: '⏱️', title: 'SLA Enforcement', desc: 'Every complaint gets a deadline. Automatic escalation if an officer misses it.' },
   { icon: '📊', title: 'Live Analytics', desc: 'Real-time dashboards showing resolution rates, bottlenecks, and citizen satisfaction.' },
 ];
@@ -48,7 +48,7 @@ export default function Landing() {
           </div>
 
           <span className="badge badge-green" style={{ marginBottom: 16, fontSize: 12 }}>
-            🇮🇳 India Innovates 2026 — Smart Governance Track
+            🇮🇳 India Innovates 2026 - Smart Governance Track
           </span>
 
           <h1 style={{
@@ -166,7 +166,7 @@ export default function Landing() {
           <span style={{ color: '#FF6B00' }}>We're listening.</span>
         </h2>
         <p style={{ color: '#607D8B', marginBottom: 28 }}>
-          File now and track in real time — in your language.
+          File now and track in real time - in your language.
         </p>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/file" className="btn-primary">📝 File a Complaint</Link>
